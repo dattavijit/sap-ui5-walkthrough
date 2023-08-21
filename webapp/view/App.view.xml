@@ -1,0 +1,9 @@
+<mvc:View
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	displayBlock="true"
+	height="100%"
+	busyIndicatorDelay="0"
+>
+<Text text="Text coming from the view, Hello UI5 again"></Text>
+</mvc:View>
