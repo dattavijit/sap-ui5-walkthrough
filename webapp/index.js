@@ -1,6 +1,8 @@
 sap.ui.define([
-    
-], function() {
+    "sap/m/Text"
+], function(Text) {
     'use strict';
-    alert("Hello World - BootStrapped")
+    return new Text({
+        text:"This Text is coming from the callback"
+    }).placeAt("content")
 });
