@@ -6,4 +6,18 @@
 	height="100%"
 	busyIndicatorDelay="0" >
 	<Button id="idSayHiButton" text="Say hi" press=".onSayHiButtonPress"></Button>
+	<Input
+		value="{/recipient/name}"
+		description="Hello {/recipient/name}"
+		valueLiveUpdate="true"
+		width="60%"
+	>
+		<suggestionColumns>
+			
+		</suggestionColumns>
+		<suggestionItems>
+		</suggestionItems>
+		<suggestionRows>
+		</suggestionRows>
+	</Input>
 </mvc:View>
