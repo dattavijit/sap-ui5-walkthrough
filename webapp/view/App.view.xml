@@ -5,7 +5,7 @@
 	displayBlock="true"
 	height="100%"
 	busyIndicatorDelay="0" >
-	<Button id="idSayHiButton" text="Say hi" press=".onSayHiButtonPress"></Button>
+	<Button id="idSayHiButton" text="{i18n>showHelloButtonText}" press=".onSayHiButtonPress"></Button>
 	<Input
 		value="{/recipient/name}"
 		description="Hello {/recipient/name}"
