@@ -7,7 +7,7 @@
 	busyIndicatorDelay="0" >
 	
 	<Shell >
-		<App>
+		<App class="myAppDemoWT">
 			<pages>
 				<Page title="{i18n>homePagetitle}">
 					<content>
@@ -15,12 +15,12 @@
 								class="sapUiResponsiveMargin"
 								width="auto">
 							<content>
-								<Button id="idSayHiButton" text="{i18n>showHelloButtonText}" press=".onSayHiButtonPress"></Button>
+								<Button id="idSayHiButton" text="{i18n>showHelloButtonText}" 
+										press=".onSayHiButtonPress"
+										class="myCustomButton"/>
 								<Input value="{/recipient/name}"  valueLiveUpdate="true" width="60%" />
-								<Text 
-									text="Hello {/recipient/name}!" 
-									class="sapUiResponsiveMargin">
-								</Text>
+								<FormattedText htmlText="Hello {/recipient/name}!" 
+											   class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"></FormattedText>
 								</content>
 						</Panel>
 					</content>
