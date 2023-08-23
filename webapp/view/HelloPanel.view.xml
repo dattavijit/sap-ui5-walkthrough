@@ -2,7 +2,6 @@
     controllerName="sap.ui.demo.walkthrough.controller.HelloPanel"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
-    xmlns:c="sap.ui.core"
     displayBlock="true"
     height="100%"
     busyIndicatorDelay="0"
@@ -14,9 +13,9 @@
     >
         <content>
             <Button
-                id="idSayHiButton"
+                id="idHelloButton"
                 text="{i18n>showHelloButtonText}"
-                press=".onSayHiButtonPress"
+                press=".onHelloButtonPress"
                 class="myCustomButton"
             />
             <Input
