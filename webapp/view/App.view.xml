@@ -5,19 +5,20 @@
 	displayBlock="true"
 	height="100%"
 	busyIndicatorDelay="0" >
-	<Button id="idSayHiButton" text="{i18n>showHelloButtonText}" press=".onSayHiButtonPress"></Button>
-	<Input
-		value="{/recipient/name}"
-		description="Hello {/recipient/name}"
-		valueLiveUpdate="true"
-		width="60%"
-	>
-		<suggestionColumns>
-			
-		</suggestionColumns>
-		<suggestionItems>
-		</suggestionItems>
-		<suggestionRows>
-		</suggestionRows>
-	</Input>
+	
+
+	<App>
+		<pages>
+			<Page title="{i18n>homePagetitle}">
+				<content>
+					<Panel headerText="{i18n>panelHeaderText}">
+						<content>
+							<Button id="idSayHiButton" text="{i18n>showHelloButtonText}" press=".onSayHiButtonPress"></Button>
+							<Input value="{/recipient/name}" description="Hello {/recipient/name}" valueLiveUpdate="true" width="60%" />
+						</content>
+					</Panel>
+				</content>
+			</Page>
+		</pages>
+	</App>
 </mvc:View>
