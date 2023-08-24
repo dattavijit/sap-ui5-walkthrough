@@ -1,0 +1,31 @@
+<c:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:c="sap.ui.core"
+>
+<!-- Dialog with text-->    
+    <Dialog
+        id="idhelloDialog"
+        title="{i18n>helloDialogTitle}"
+        contentWidth="440px"
+        draggable="true"
+        resizable="true"
+        beginButton="helloDialogButton"
+        afterClose=".onDialogAfterClose"
+    >
+        <content>
+            <Text
+                text="Hello {/recipient/name}"
+                class="sapUiSmallMarginBottom"
+            />
+        </content>
+
+        <beginButton>
+            <Button
+                id="idCloseButton"
+                text="{i18n>dialogCloseButtonText}"
+                press=".onCloseButtonPress"
+            />
+        </beginButton>
+
+    </Dialog>
+</c:FragmentDefinition>

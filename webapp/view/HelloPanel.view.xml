@@ -12,6 +12,13 @@
         width="auto"
     >
         <content>
+            <!-- Button -->
+            <Button
+                id="idShowDialogButton"
+                text="{i18n>showDialogButtonText}"
+                press=".onButtonShowDialogPress"
+                class="myCustomButton" />
+
             <Button
                 id="idHelloButton"
                 text="{i18n>showHelloButtonText}"
