@@ -17,7 +17,7 @@ sap.ui.define([
             new MessageToast.show("Hello " + sRecipient + "! ");
         },
 
-        onButtonShowDialogPress: function (oEvent) {
+        onShowDialogButtonPress: function (oEvent) {
             // lazy load fragment
             if (!this._oDialog) {
                 this._oDialog = sap.ui.xmlfragment("sap.ui.demo.walkthrough.view.HelloDialog", this);
