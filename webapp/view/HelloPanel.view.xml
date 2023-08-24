@@ -16,7 +16,7 @@
             <Button
                 id="idShowDialogButton"
                 text="{i18n>showDialogButtonText}"
-                press=".onButtonShowDialogPress"
+                press=".onShowDialogButtonPress"
                 class="myCustomButton" />
 
             <Button
