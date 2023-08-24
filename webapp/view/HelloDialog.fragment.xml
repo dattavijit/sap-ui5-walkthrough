@@ -1,11 +1,12 @@
 <c:FragmentDefinition
-	xmlns="sap.m"
-	xmlns:c="sap.ui.core"
+    xmlns="sap.m"
+    xmlns:c="sap.ui.core"
 >
-<!-- Dialog with text-->    
+    <!-- Dialog with text-->
     <Dialog
         id="idhelloDialog"
         title="{i18n>helloDialogTitle}"
+        icon="sap-icon://world"
         contentWidth="440px"
         draggable="true"
         resizable="true"
@@ -17,15 +18,33 @@
                 text="Hello {/recipient/name}"
                 class="sapUiSmallMarginBottom"
             />
+            <c:Icon
+                activeBackgroundColor=""
+                activeColor=""
+                alt=""
+                backgroundColor=""
+                color=""
+                decorative="true"
+                height=""
+                hoverBackgroundColor=""
+                hoverColor=""
+                noTabStop="false"
+                size="8rem"
+                src="sap-icon://hello-world"
+                useIconTooltip="true"
+                width=""
+            >
+                
+            </c:Icon>
         </content>
 
         <beginButton>
             <Button
                 id="idCloseButton"
+                icon="sap-icon://world"
                 text="{i18n>dialogCloseButtonText}"
                 press=".onCloseButtonPress"
             />
         </beginButton>
-
     </Dialog>
 </c:FragmentDefinition>
