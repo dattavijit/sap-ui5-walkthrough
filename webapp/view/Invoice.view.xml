@@ -6,11 +6,25 @@
 >
 	<!-- create a list and bind invoice.json-->
 	<List
+		id="invoiceList"
 		headerText="{i18n>invoiceListTitle}"
 		class="sapUiResponsiveMargin"
 		width="auto"
 		items="{invoice>/Invoices}"
 	>
+	<!-- New Header tool bar -->
+		<headerToolbar>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<!-- New search field -->
+				<SearchField
+					placeholder="{i18n>invoiceListFilterItems}"
+					search="onFilterInvoices"
+					liveChange="onSearch"
+					width="50%"/>
+			</Toolbar>
+			</headerToolbar>
+
 		<items>
 			<ObjectListItem
 				title="{invoice>Quantity} x {invoice>ProductName}"
