@@ -1,0 +1,14 @@
+<!-- Create a new view -->
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:c="sap.ui.core">
+    <Page title="{i18n>homePagetitle}">
+		<headerContent>
+			<Button icon="sap-icon://action" tooltip="Hello World" press=".onOpenDialog" />
+		</headerContent>
+        <content>
+            <mvc:XMLView viewName="sap.ui.demo.walkthrough.view.HelloPanel"></mvc:XMLView>
+            <mvc:XMLView viewName="sap.ui.demo.walkthrough.view.Invoice"></mvc:XMLView>
+        </content>
+    </Page>
+</mvc:View>
